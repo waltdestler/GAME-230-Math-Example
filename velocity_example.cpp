@@ -1,4 +1,4 @@
-/*#include <SFML/Graphics.hpp>
+#include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/Audio.hpp>
 #include <SFML/Network.hpp>
@@ -60,7 +60,7 @@ void update_state(float dt)
 	if (pos.x < 0 && vel.x < 0)
 		vel.x = -vel.x;
 
-	vel.y += 1000 * dt;
+	//vel.y += 1000 * dt;
 
 	ball.setPosition(pos);
 }
@@ -69,4 +69,4 @@ void render_frame()
 {
 	window.clear();
 	window.draw(ball);
-}*/
+}
