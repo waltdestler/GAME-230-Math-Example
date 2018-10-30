@@ -47,9 +47,9 @@ int main()
 bool contains_point(FloatRect r, Vector2f p)
 {
 	return p.x >= r.left &&
-		p.x < r.left + r.width &&
-		p.y >= r.top &&
-		p.y < r.top + r.height;
+	       p.x < r.left + r.width &&
+	       p.y >= r.top &&
+	       p.y < r.top + r.height;
 }
 
 void update_state(float dt)
